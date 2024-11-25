@@ -1,0 +1,2603 @@
+body div{
+font-family: Arial, Helvetica, sans-serif;	
+}
+body 
+{			
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size:11px;	
+	padding: 0px;
+	margin: 0px;
+    overflow-y: scroll;
+}
+.DisplayNone
+{
+    display: none;
+}
+textarea {
+    resize: none;
+}
+*:focus {outline: none;}
+.FrameTable
+{
+	width: 100%;
+}
+.HeaderDiv,
+.FooterDiv,
+.ContentDiv,
+.HeaderMenuLineInner
+{
+	width: 900px;
+	margin-left: 30px;
+	margin-right: 20px;
+	text-align: left;
+}
+.HeaderMenuLineOuter
+{
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #38B5E7;
+	margin-bottom: 5px;
+}
+.HeaderMenuLine
+{
+	background-color: #38B5E7; /*background-color: #DFECF5;*/ /*	background-color: #8E9197;*/
+	height: 28px;	
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #FFFFFF;
+	/*border-bottom-color: #1187C0;*/
+}
+.HeaderMenuLineInner, .HeaderMenuLineInner a, .HeaderMenuLineInner .sep
+{
+	text-align: right;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-top: 7px;
+	text-decoration: none;
+}
+.HeaderMenuLineInner .sep
+{
+	/*color: #999999;*/
+	color: #E5E5E5;
+}
+.HeaderMenuLineInner .highlight2
+{
+    /*
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #FF0000;
+    padding-bottom: 7px;
+*/
+    padding: 7px 6px 6px 6px;
+    background-color: #7CCFEF;    
+}
+.MainTable
+{
+	text-align: left;
+	width: 900px;
+	display: none;
+}
+.MainTableLeft
+{
+	vertical-align: top;	
+}
+.MainTableRight
+{	
+	vertical-align: top;	
+}
+.MainTableRightDiv
+{
+	padding-left: 40px;
+}
+.MainLoadingDiv
+{
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 50px;	
+	padding-bottom: 50px;	
+	font-size: 30px;	
+}
+.HomePageTop1
+{
+	background: url(/Images/design/pageTop1.png) no-repeat;	
+	width: 897px;
+	height: 28px;	
+}
+.HomePageTop2
+{
+	padding: 0px 20px 10px 20px;
+	background: url(/Images/design/pageTop2bg.png) repeat-y;
+	width: 897px;
+}
+.HomePageTop3
+{
+	background: url(/Images/design/pageTop3.png) no-repeat;	
+	width: 897px;
+	height: 10px;		
+}
+.HomePageTop3bg
+{
+	background: url(/Images/design/pageTop3bg.png) repeat-y;
+	width: 897px;	
+	
+}
+.HomePageTop4
+{	
+	background: url(/Images/design/pageTop4.png) bottom left no-repeat;
+	width: 897px;	
+	padding-left: 40px;	
+	padding-bottom: 8px;
+}
+.HomePageTop5
+{
+	background: url(/Images/design/pageTop5bg.png) repeat-y;
+	width: 897px;	
+	padding-left: 30px;	
+	padding-top: 10px;
+}
+.HomePageTop6
+{
+	background: url(/Images/design/pageTop6.png) no-repeat;	
+	width: 897px;
+	height: 10px;
+}
+.HPHeader1
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	color: #333333;
+}
+.HPHeader2
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333333;
+	margin-top: -8px;
+}
+.HPHeaderRight
+{
+	float: right;
+	padding-top: 8px;
+	padding-right: 54px;
+	width: 300px;
+}
+.HPHeaderRight img
+{
+	border: 0px;
+}
+.HPHeaderLogin
+{
+	float: left;
+	padding-top: 12px;
+	padding-right: 10px;
+}
+.HPHeaderSignup
+{
+	float: right;
+}
+.HPMiddleLeft
+{
+	height: 350px;
+}
+.HPMiddleRight
+{
+	display: inline-block;
+	float: right;
+	margin-right: 60px;
+	margin-top: 10px;
+}
+.HPMiddleIcon
+{
+	background: url(/Images/bigicons/note.png) no-repeat;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 52px;
+	padding-top: 15px;
+	padding-right: 40px;
+	color: #ffffff;	
+	height: 33px;	
+}
+.HPMiddleIcon1
+{
+	background: url(/Images/bigicons/office_folders.png) no-repeat;
+}
+.HPMiddleIcon2
+{
+	background: url(/Images/bigicons/promotion.png) no-repeat;
+}
+.HPMiddleIcon3
+{
+	background: url(/Images/bigicons/old_clock.png) no-repeat;
+}
+.HPMiddleIcon4
+{
+	background: url(/Images/bigicons/globe.png) no-repeat;
+}
+.HPMiddleIcon5
+{
+	background: url(/Images/bigicons/creditcart1.png) no-repeat;
+}
+.HPloginDiv
+{
+	border: 1px solid #EDF5FA;
+	width: 240px;
+	
+	position: absolute;
+	padding: 10px 20px 20px 20px;
+	margin-left: -2px;
+	display: none;
+	background-color: #1B9FD1;
+}
+.HPsignupDiv
+{
+	border: 1px solid #EDF5FA;
+	width: 250px;	
+	position: absolute;
+	padding: 10px 20px 20px 20px;
+	margin-left: -2px;
+	background-color: #1B9FD1;
+	display: none;
+}
+.HPloginDivHeader
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;	
+	padding-bottom: 10px;
+}
+.HPloginDivText
+{
+	font-size: 13px;
+	color: #ffffff;	
+	padding: 4px 0px 4px 0px;
+}
+.HPloginDivTextB
+{
+	font-size: 13px;
+	color: #ffffff;	
+	padding: 4px 0px 4px 0px;
+	font-weight: bold;
+}
+.HPloginSep
+{
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #FFFFFF;
+    margin-top: 34px;
+    padding-top: 3px;   
+}
+
+.HPSignupSep
+{
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #FFFFFF;
+    margin-top: 5px;
+    padding-top: 3px;   
+}
+.HPLoginInput,
+.HPLoginInputDarker
+{
+	border: 1px solid #B1E2F5;
+	background-image: url(/images/input_bg.jpg);
+	background-repeat: repeat-x;	
+	padding: 3px;
+	width: 230px;
+	height: 20px;
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.HPLoginInputDarker
+{
+    border: 1px solid #54C0E9;
+}
+.HPLoginCB
+{
+	color: #ffffff;		
+}
+.HPSignupDropDown
+{	
+	border: none;	
+	font-size:13px;		
+	height:29px;
+
+	width:240px;	
+}
+.HPLoginBtnDiv
+{
+	float: right;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+.HPloginDivX
+{
+	float: right;
+	margin-right: -10px;
+}
+.HPLoginForgotLink
+{
+	font-size: 12px;
+	color: #ffffff;	
+	
+}
+.HPLoginForgotLinkDiv
+{
+	border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #FFFFFF;
+    margin-top: 5px;
+    padding-top: 10px;	
+    font-weight: bold;
+}
+.HPLoginForgotDiv
+{
+	display: none;
+	padding-top: 15px;
+	width: 240px;
+}
+.HPLoginTerms
+{
+	font-size: 11px;
+	color: #ffffff;
+	padding-top: 5px;	
+	display: block;
+}
+.HPValidator
+{
+	color: #ffffff;
+}
+.HPLoginTerms a
+{
+	color: #ffffff;
+}
+.HpAboutTextdiv
+{
+	font-size: 14px;
+	padding: 10px;
+	width: 270px;		
+}
+.HpAboutTitle
+{
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.HpAboutText
+{
+	color: #fff;
+	text-align: justify;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	font-size: 12px;
+}
+
+.HpContentStatdiv
+{
+	float: right;
+	width: 200px;	
+	color: #333333;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 5px;
+	margin-right: 40px;
+}
+.HPPresDiv
+{
+	width: 400px;
+	height: 130px;
+	display: inline-block;			
+	margin-right: 20px;
+	margin-top: 20px;
+	
+}
+.HPPresPic
+{
+	float: left;
+	width: 170px;
+}
+.HPPresCont
+{
+	float:right;
+	width: 226px;
+	padding-left: 4px;
+}
+.HPPresTitle
+{	
+	font-size: 17px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	padding-top: 3px;
+}
+.HPPresText
+{
+	font-size: 12px;
+	text-align: justify;
+}
+.HPReviewDiv,
+.HPTwittDiv
+{
+	margin-top: 20px;
+	padding-top: 20px;
+	height: 140px;
+	width: 840px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #CCCCCC;
+}
+.HPReviewImg
+{
+	padding-left: 25px;
+	padding-top: 5px;
+}
+.HPTwittDiv
+{
+	height: 150px;
+}
+.HPReviewTitle,
+.HPTwittTitle
+{
+	float: left;
+	font-size: 23px;	
+	color: #1B9FD1;
+	width: 180px;
+	height: 100%;
+}
+.HPTwittTitle
+{
+	padding-top: 10px;	
+	float: none;
+}
+.HPTwittFollow
+{
+	padding-top: 30px;	
+}
+.HPTwittFollowLink
+{
+	display: block;		
+}
+.HPReviewContent,
+.HPTwittContent
+{	
+	text-align: left;
+}
+.HPReviewItem
+{			
+	padding-left: 30px;	
+	font-size: 14px;
+	height: 23px;	
+}
+.HPReviewItemA
+{
+	color: #001C55;
+	text-decoration: none;
+}
+.HPReviewItemIcon
+{
+	background-image: url(/images/review.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	float: left;
+	height: 20px;
+	width: 20px;
+	padding-right: 5px;
+}
+.HPRevAuth
+{
+	color: #666666;
+	font-style: italic;
+}
+.HPTwittDiv
+{
+	
+}
+.TwitterDiv
+{
+	font-size: 12px;
+}
+.TwitterDivImg
+{
+	border: 1px solid #CCCCCC;
+	height: 30px;
+	width: 30px;
+	float: left;
+	margin-right: 5px;
+}
+
+
+#ProjectList,
+#FilterList
+{
+	min-width: 200px;
+}
+.list
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;		
+}
+.projectList li,
+.filterList li
+{
+	color: #000000;
+	cursor: pointer;	
+}
+.BaseProjectLiDiv,
+.BaseFilterLiDiv,
+.AddProjectLiDiv
+{
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #E8E8E8;
+	font-size: 11px;
+	margin: 0;
+	padding-left: 3px;	
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	color: #000000;
+	cursor: pointer;
+	height: 17px;	
+	min-width: 150px;	
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.BaseProjectLiDiv:hover,
+.BaseFilterLiDiv:hover
+{
+	background-color: #FFFFCC;			
+	border-top: 1px solid #FFFFCC;
+	border-left: 1px solid #FFFFCC;
+	border-right: 1px solid #FFFFCC;	
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.ProjectSelected
+{
+	background-color: #D1F099;
+	border-top: 1px solid #D1F099;
+	border-left: 1px solid #D1F099;
+	border-right: 1px solid #D1F099;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.ProjectSelected:hover 
+{
+	background-color: #B8E761;
+	border-top: 1px solid #B8E761;
+	border-left: 1px solid #B8E761;
+	border-right: 1px solid #B8E761;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.ProjectSelectedMoveItem
+{
+	background-color: #FFA4C1;
+	border: 1px solid #CC0000;
+}
+.ProjectSelectedMoveItem:hover
+{
+	background-color: #FFA4C1;
+	border: 1px solid #CC0000;
+}
+.AddProjectLiDiv
+{
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+.AddProjectLiDiv:hover
+{
+	background-color: #FFFFCC;			
+	border-top: 1px solid #FFFFCC;
+	border-left: 1px solid #FFFFCC;
+	border-right: 1px solid #FFFFCC;
+	border-bottom: 1px solid #FFFFCC;
+}
+/* //////////////////// ITEM \\\\\\\\\\\\\\\\\\\\\\\\ */
+.BaseItemLiDiv:hover
+{
+	background-color: #FFFFCC;
+}
+.BaseItemLiDiv
+{			
+	border-bottom: 1px solid #E8E8E8;
+	font-size: 11px;
+	margin: 0;
+	padding: 4px;	
+	padding-left: 0px;
+	padding-bottom: 3px;
+	padding-top: 5px;			
+}
+.LiNotes,
+.LiNotes2
+{    
+    margin-left: 35px;
+    padding-top: 2px;
+    border-top-style: dashed;
+    border-top-width: 1px;
+    border-top-color: #E2E2E2;    
+}
+.LiNotes2
+{
+    margin-left: 20px;
+}
+.LiNotesSpan
+{
+    margin: 1px;
+    width: auto;
+    height: auto;
+    padding-left: 3px;
+    min-height: 10px;    
+    max-width: 600px;
+}
+.LiNotesSpanEdit
+{
+    margin: 0px;
+    border: 1px solid #333333;
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+    padding-left: 3px;
+    background: url(/Images/input-bg.png) repeat-x white;
+    min-height: 40px;
+    max-width: 600px;    
+    -webkit-user-modify: read-write;
+    -moz-user-modify: read-write;
+    word-wrap: break-word;
+    -webkit-nbsp-mode: space;
+    -webkit-line-break: after-white-space;
+}
+.LiNotesEditIcons
+{
+    float: left;      
+    margin-left: -20px;    
+}
+.NotesEditIcon
+{
+    display: block;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.ItemNotesBtn,
+.ItemNotesBtn2
+{
+    background: url(/Images/icons2/notes.png) no-repeat;	
+    height: 18px;    
+    width: 20px;
+    margin-left: 2px;
+    float: right;	
+    cursor: pointer;
+    display: none;
+}
+.ItemNotesBtn2
+{
+    background: url(/Images/icons2/notesDis.png) no-repeat;	
+}
+
+.clearer
+{
+    clear:left;
+    height: 1px;
+}
+
+.AddItemLiDiv
+{
+	
+}
+.ListIcon,
+.ListIconAdd
+{		
+	margin-right: 5px;
+	background: url(/Images/icons/page2.png) no-repeat;		
+	width: 16px;	
+	height: 16px;	
+}
+.ListIconAdd
+{
+	background: url(/Images/icons/add.png) no-repeat;	
+	margin-left: 9px;
+}
+.ListCount
+{
+    /*
+    
+    width: 18px;
+    height: 14px;
+   */
+    text-align: center;
+    margin-right: 3px;
+    margin-left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    /*background: url(/Images/countbg2.png) no-repeat; */
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;    
+      
+    color: #000000;
+    padding: 1px 1px;
+    width: 18px;
+    height: 14px;
+    font: 9px verdana,arial,sans-serif;
+}
+
+.ListCountTd
+{
+	vertical-align: top;
+}
+.ProjItemTable
+{
+	width: 100%;
+	vertical-align: top;
+}
+.AddItemTable
+{
+	width: 100%;
+	vertical-align: top;
+}
+.AddItemTable td
+{
+	vertical-align: top;
+}
+.ItemContent
+{
+	width: 100%;
+	vertical-align: top;		
+}
+.ProjItemContent,
+.FilterItemContent
+{
+	width: 100%;
+	vertical-align: top;
+	overflow: hidden;
+	white-space: nowrap;	
+	text-overflow: ellipsis;
+	max-width: 130px;
+	padding-left: 1px;
+	padding-top: 1px;		
+}
+.FilterItemProjectDiv
+{
+    border: 1px solid #BCBC06;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;    
+    color: #000000;
+    white-space: nowrap;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin: -1px 4px 0px 2px;    
+    float: right;
+    display: none;
+    background-color: #FFFFCC;
+    cursor: pointer;
+    height: 15px;    
+}
+.ProjItemMenu
+{
+	display: none;		
+	margin-left: 5px;
+	width: 20px;
+}
+.ItemIndicator
+{
+	width: 23px;
+	vertical-align: top;
+	display: block;
+}
+
+.InputTextAddProj,
+.InputTextAddItem,
+.InputTextEditItem,
+.InputTextEditProj
+{
+	font-size:11px;
+}
+.InputTextAddProj
+{
+	width: 100px;
+	margin-left: 0px;
+	margin-top: -3px;
+}
+.InputTextAddItem
+{	
+	border: 0px solid yellow;
+	width: 560px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	height: 15px;
+	min-height: 20px;
+	max-height: 200px;
+	display: block;
+	background-color: Transparent;	
+	padding-top: 6px;
+	padding-left: 2px;
+}
+.InputTextAddItemWatermark
+{
+	background: url(/Images/AddItemTypeHere.png) top left no-repeat;
+	background-position: 2px 7px;
+}
+.InputTextAddItemDueDateWatermark
+{
+	background: url(/Images/WatermarkDueDate.png) top left no-repeat;
+	background-position: 5px 6px;
+}
+.InputTextAddItemNotesWatermark
+{
+	background: url(/Images/WatermarkNotes.png) top left no-repeat;
+	background-position: 7px 8px;
+}
+
+.InputTextAddItemNotesWatermarkNoPro
+{
+	background: url(/Images/WatermarkNotesForPro.png) top left no-repeat;
+	background-position: 7px 8px;
+}
+
+.InputBtnAdd,
+.ui-button
+{
+    /* Disables default styling */
+    border: none !important;
+    background: #00B6FF;
+    color: #fff !important;
+
+    /* You need to set font, font size and cursor for buttons */
+    font-size: 15px;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    cursor: pointer;
+
+    padding: 8px 10px;
+    font-weight: bold;    
+    margin: 0px;
+}
+.InputBtnAdd,
+.ui-button
+{
+    border-radius: 5px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    -webkit-border-radius: 5px;
+    -webkit-text-shadow: 0 -1px 0 rgba(0,0,0,0.15);    
+}
+.InputBtnAdd:hover,
+.ui-button:hover
+{
+    /*background: #6CD7FF;*/
+    box-shadow:
+        0 0 0 1px #0086ba inset, /* Outer bevel */
+        0 0 0 2px #6cdcea inset, /* Inner bevel */
+        0 30px 20px -18px rgba(255,255,255,0.65) inset, /* Inner gradient */
+        1px 1px 3px rgba(0,0,0,0.2) /* Drop shadow */
+    ;
+    -webkit-box-shadow:
+        0 0 0 1px #0086ba inset, /* Outer bevel */
+        0 0 0 2px #6cdcea inset, /* Inner bevel */
+        0 30px 20px -18px rgba(255,255,255,0.65) inset, /* Inner gradient */
+        1px 1px 3px rgba(0,0,0,0.2) /* Drop shadow */
+    ;
+}
+.ui-button
+{
+    padding: 0px;
+    background: #00B6FF !important;
+}
+.ui-button:hover
+{
+    background: #00B6FF !important;
+}
+.InputBtnAdd[disabled]
+{
+    background: #CCCCCC;
+    color: #999999;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.InputBtnAdd2
+{
+    height: 20px;
+    padding: 2px 10px;
+}
+.box
+{
+	margin-right: 10px;
+	width: 607px;
+}
+.box div.topleft {
+	display: block;
+	background: url(/Images/AddItemBox4.png) top left no-repeat white;
+	padding: 5px 0px 0px 5px;
+}
+
+.box div.topright {
+	display: block;
+	background: url(/Images/AddItemBox4.png) top right no-repeat white;
+	padding: 2px;
+	margin: -5px 0px 0px 0px;
+}
+
+.box div.bottomleft {
+	display: block;
+	height: 5px;
+	margin-top: -5px;
+	background: url(/Images/AddItemBox4.png) bottom left no-repeat white;
+}
+
+.box div.bottomright {
+	display: block;
+	background: url(/Images/AddItemBox4.png) bottom right no-repeat white;
+	height: 5px;
+	margin-left: 6px;
+}
+.AddItemShadow
+{
+	/*background: url(/Images/AddItemBoxShadow.png) bottom left no-repeat;*/	
+}
+.AddItemExpander
+{
+	margin-bottom: -10px;
+	position: absolute;
+	text-align: right;
+	width: 590px;
+}
+.AddItemWhenHidden
+{
+	display: none;
+	width: 663px;
+}
+.Div663
+{	
+	width: 663px;
+}
+
+#AddItemMore
+{
+	cursor: pointer;	
+}
+.AddItemAdvPanel
+{
+    display: none;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-right-color: #B0B0B0;
+    border-left-color: #B0B0B0;
+}
+.AddItemAdvPanelInner
+{
+    padding-bottom: 0px;
+    font-size: 11px;
+}
+.AddItemRow, .AddItemRow2
+{
+    padding: 0px 5px 4px 8px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #CCCCCC;
+}
+.AddItemRow
+{
+    padding: 2px 5px 7px 8px;
+}
+.AddItemCalIcon
+{
+    vertical-align: top;
+    padding-top: 5px;
+    padding-right: 2px;
+}
+.AddItemCheckBoxIcon
+{
+    vertical-align: top;    
+    padding: 7px 6px 0px 3px;
+}
+.AddItemNotes
+{
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 560px;
+    min-height: 15px;
+    -webkit-user-modify: read-write;
+    word-wrap: break-word;
+    -webkit-nbsp-mode: space;
+    -webkit-line-break: after-white-space;
+}
+.AddItemAdvDate,
+.AddItemAdvDate2
+{    
+    padding-left: 2px;    
+    border: 0px;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin-top: 2px;
+	height: 20px;	
+	width: 560px;
+}
+
+.AddItemAdvDate2
+{
+    border: 1px solid #C0C0C0;
+    height: 15px;
+	width: 120px;
+}
+.AddItemAdvDateEG
+{
+    clear: left;
+    display: block;
+    font-style: italic;
+    margin-left: 25px;
+    margin-top: 2px;
+    color: #888888;
+}
+.ui-datepicker-trigger
+{
+	vertical-align: text-bottom;
+	padding-left: 2px;
+}
+.AddItemAdvSelect
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;	
+}
+.AddItemAdvRepeat
+{
+	display:none;
+	padding-top: 2px;	
+}
+.AddItemAdvRepeat input
+{
+	vertical-align: text-bottom;
+}
+.AddItemAdvRepeat table
+{
+	display: inline;
+}
+.AddItemAdvRepeat table td
+{
+	text-align: center;
+}
+
+.InputTextEditItem, .InputTextEditProj
+{
+    border: 1px solid #999999;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1px;
+    margin-bottom: -2px;
+    padding: 2px;
+    padding-bottom: 0px;
+    /*background: url(/Images/input-bg.png) repeat-x white;*/
+}
+.InputTextEditItem
+{
+	height: 15px;
+	min-height: 15px;
+	max-height: 200px;	
+	padding-bottom: 0px;	
+}
+.InputTextEditProj
+{
+	height: 13px;	
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	width: 110px;
+	border: 1px solid #666666;
+}
+
+#ItemEditSubmit,
+#ProjEditSubmit
+{
+	padding: 0px;
+	margin: 0px;		
+	margin-top: -1px;	
+	padding-left: 3px;
+	vertical-align: top;		
+	cursor: pointer;
+}
+#ItemEditCancel,
+#ProjEditCancel
+{
+	padding: 0px;
+	margin: 0px;		
+	margin-top: -1px;	
+	padding-left: 3px;
+	vertical-align: top;		
+	cursor: pointer;
+}
+#AddNewProjDiv
+{
+	padding-top: 10px;
+	padding-left: 4px;
+}	
+.AddNewItemDiv
+{
+	padding-top: 10px;
+}
+.ItemCheckDiv
+{	
+	padding-right: 2px;	
+	vertical-align: middle;
+}
+.ItemCheckBox
+{
+    margin-left: 0px;
+}
+.ItemContentDiv
+{
+    cursor: text;
+    display: block;
+    padding-top: 2px;
+    padding-left: 3px;    
+}
+.ItemContentDivBold
+{
+	font-weight: bold;
+	background: url(/Images/bullet7.png) no-repeat;
+	padding-left: 22px;
+	margin-left: 0px;
+	padding-bottom: 3px;
+}
+.ItemContentDivBoldDisabled
+{
+	font-weight: bold;
+	color: #999999;
+	background: url(/Images/bullet7d.png) no-repeat;
+	padding-left: 22px;
+	margin-left: 2px;
+	padding-bottom: 3px;
+}
+.ItemDueDateOuter
+{
+	padding-top: 1px;
+	margin-top: -2px;
+	margin-right: 2px;
+	margin-left: 2px;
+	float: right;	
+}
+.ItemDueDate
+{
+    /*
+	margin-top: -2px;
+	margin-right: 2px;
+	margin-left: 2px;
+	float: right;	*/
+    
+    height: 17px; /*background: url(/Images/DueDateBg0.png) top left no-repeat white;	*/
+    cursor: pointer;
+    display: none;
+
+    
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.ItemDueDateSet
+{
+	position: absolute;
+	margin-left: -100px;
+	
+}
+.ItemDueDateInner
+{
+	margin-left: 6px;
+	
+	height:17px;
+	padding: 1px;		
+	/*background: url(/Images/DueDateBg0.png) top right no-repeat white;	*/
+	padding-right: 8px;
+}
+
+.ItemDueDate_p0 { background-color: #F5F5F5; border: 1px solid #E3E3E3; }
+.ItemDueDate_p1 { background-color: #FFDDDD; border: 1px solid #FFB5B5; }
+.ItemDueDate_p2 { background-color: #DEF3B6; border: 1px solid #B9DF74; }
+/*
+.ItemDueDateInner_pp0 {background: url(/Images/DueDateBg0.png) top right no-repeat white;}
+.ItemDueDateInner_pp1 {background: url(/Images/DueDateBg1.png) top right no-repeat white;}
+.ItemDueDateInner_pp2 {background: url(/Images/DueDateBg2.png) top right no-repeat white;}
+  */  
+.DoneItem
+{
+	text-decoration: line-through;
+	color: #666666;
+}
+.PlaceholderItem
+{
+	color: #666666;
+}
+.UnderEditingItem
+{
+	text-decoration: none;
+	color: #000000;
+	padding: 0px;
+	margin: 0px;	
+}
+.ItemMenu
+{
+	cursor: pointer;
+	display: none;
+}
+.SortMenu,
+.NotesAllText
+{
+    cursor: pointer;        
+    text-decoration: underline;    
+}
+.NotesAllTextOn
+{
+    color: #33CC33;
+}
+.NotesAllTextOff
+{
+    
+}
+.CurrentProjectTitle
+{
+	font-size: 16px;
+	padding-bottom: 13px;
+	padding-left: 38px;
+	padding-top: 4px;
+	font-weight: bold;	
+	background: url(/Images/note5.png) no-repeat;	
+}
+.CurrentProjectTitleShared
+{
+	font-size: 16px;
+	padding-bottom: 13px;
+	padding-left: 38px;
+	padding-top: 7px;
+	font-weight: bold;	
+	background: url(/Images/menu/users32.png) no-repeat;	
+}
+.NoItems
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: none;
+    font-size: 12px;
+    font-style: italic;
+    color: #666666;
+}
+.IconFrame
+{	
+	margin: 3px;
+	width: 16px;	
+	height: 16px;
+	display: block;
+	float: left;
+	cursor: pointer;
+	background: url(/Images/icons/page2.png) no-repeat;
+}
+.PrioTitle
+{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
+	color: #333333;
+	line-height:20px;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+	padding-left: 8px;
+	padding-top: 2px;
+}
+.PrioFrame
+{
+	border: 1px solid #808080;
+	margin: 3px;
+	width: 10px;
+	height: 14px;
+	display: block;
+	float: left;
+	cursor: pointer;
+	padding-left: 4px;
+	color: #ffffff;
+}
+.PrioFrameOuter
+{
+	height: 25px;
+	padding-left: 26px;
+}
+.IconFrame:hover
+{	
+	cursor: pointer;
+}
+.IconFrameOuter
+{
+	padding: 4px;
+	padding-top: 2px;
+}
+.DragHandlerTop
+{
+	padding-top:2px; 
+	float:left;
+}
+.DragHandler,
+.DragHandlerProj
+{
+	cursor: url(/Images/openhand.cur), default;	
+	padding-top:2px; 
+	float:left;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.DragHandlerProj
+{
+    padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+}
+.ItemDragPlaceholder
+{
+	border: 1px dashed #808080 !important;	
+	background-color: #F4F4F4;	
+}
+.ItemSubList,
+.ProjSubList
+{
+	padding-left: 20px; 
+	padding-right: 0px;
+}
+.ArrowExpanded
+{
+	margin-left: -17px;
+	float: left;
+	display: none;
+	background: url(/Images/arrow_blue_down.png) no-repeat;	
+	width: 16px;
+	height: 16px;
+	position: relative;
+}
+.ArrowCollapsed
+{
+	margin-left: -17px;
+	float: left;
+	display: none;
+	background: url(/Images/arrow_blue_right.png) no-repeat;	
+	width: 16px;
+	height: 16px;
+	position: relative;
+}
+.DoneItemsHeader
+{
+	padding-top: 20px;
+	padding-left: 2px;
+	padding-bottom: 3px;		
+	border-bottom:1px solid #CCCCCC;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+}
+.DoneItemsHeaderOuter
+{
+	/*background: url(/Images/cut3.png) no-repeat;*/
+	background-position: right 30px;
+	padding-bottom: 10px;
+}
+.DoneItemsHeader a
+{
+	color: #666666;
+	text-decoration: none;
+}
+.LeftMenuTitle,
+.LeftMenuTitle2
+{
+	margin-bottom: 5px;	
+	padding: 2px; 
+	padding-left: 4px;	
+	background: url(/Images/folder_red.png) no-repeat;	
+	padding-left: 38px;		
+	background-color: #DFECF5;	
+	padding-right: 6px;	
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.LeftMenuTitleInner,
+.LeftMenuTitleInnerCollapsed
+{    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;    
+}
+.LeftMenuTitleInner:hover
+{
+    background: url(/Images/arrowLightBlue3.png) no-repeat;
+    background-position: right center;
+    cursor:pointer;
+}
+.LeftMenuTitleInnerCollapsed:hover
+{
+    background: url(/Images/arrowLightBlue4.png) no-repeat;
+    background-position: right center;
+    cursor:pointer;
+}
+.LeftItemDiv
+{
+	border-bottom: 0px solid #E8E8E8;
+}
+.InboxIcon
+{		
+	background: url(/Images/icons/inbox.png) no-repeat;		
+}
+.HeaderTd
+{
+	vertical-align: top;
+}
+.HeaderDiv
+{
+	padding-bottom: 10px;
+}
+.FooterDiv
+{
+	font-size: 11px;
+	border-top: 4px double #C0C0C0;
+	margin: 30px auto 0px;	
+	width: 100%;
+	height: 50px;
+	text-align: center;		
+}
+.FooterDivInner
+{	
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+.FooterDivInner .copyright
+{	
+	width:300px;
+	/*color:#777777;*/
+	color: #1187C0;
+	float:left;
+	margin:0;
+	padding:5px 8px 6px 0;		
+	text-align:left;
+}
+.FooterDivInner .footerLinks
+{
+	float:right;
+	padding:5px 0 6px;
+	text-align:right;
+	width:500px;	
+}
+.FooterDivInner a 
+{
+	color:#3B5998;
+	cursor:pointer;
+	outline-style:none;
+	text-decoration:none;
+}
+.pagefooter_ul
+{
+	display:inline;
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style-type:none;
+}
+.pagefooter_li
+{
+	display:inline;
+	padding:0 0 0 10px;
+}
+.FooterDivOuter
+{
+	border-top: 1px solid #DFECF5;
+	margin-top: 20px;
+	text-align: center;
+	background-color: #ECF4FD;
+	height: 100%;
+}
+.DateDiv
+{
+	color: #666666;
+	white-space: nowrap;
+	font-size: 10px;
+	padding-top: 3px;
+}
+.HeaderButtonsDiv
+{
+    padding-top: 5px;
+}
+.HeaderRefreshDiv,
+.HeaderPrintDiv
+{
+	color: #38B5E7;
+	white-space: nowrap;
+	font-size: 12px;
+	cursor: pointer;	
+	width: 70px;	
+}
+.HeaderSepDiv
+{
+    color: #999999;
+    font-size: 12px;
+}
+.HeaderPrintDiv
+{
+    margin-left: 5px;
+}
+.HeaderRefreshImg
+{
+	vertical-align: middle;
+}
+.HeaderPrintImg
+{
+    margin-left: 4px;
+    vertical-align: middle;
+}
+.HeaderMessage
+{
+	float: left;
+	text-align: left;
+	width: 500px;
+	margin-left: 20px;
+	display: none;
+}
+.HeaderControlDiv
+{
+	height: 44px;
+}
+.AddNewProjectLink
+{
+	color: #000000;
+	font-size: 11px;
+	padding-left: 10px;
+}
+.EditDueDate
+{	
+	position: absolute;
+	display: none;	
+	width: 226px;
+}
+.EditDueDate img
+{
+	padding-top:3px;
+	border: 0px;
+	cursor: pointer;
+}
+.EditDueDateTop
+{
+	background: url(/Images/DueDatePopupTop.png) no-repeat;
+	height: 6px;
+}
+.EditDueDateMiddle
+{
+	padding-left: 8px;
+	padding-right: 8px;
+/*	background:#D1F099 none repeat scroll 0 0;*/
+	background:#DFECF5 none repeat scroll 0 0;
+}
+.EditDueDateBottom
+{
+	background: url(/Images/DueDatePopupBottom.png) no-repeat;
+	height: 6px;
+}
+.EditDueDatePostpone
+{
+	width: 100%;
+	height: 32px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #C0C0C0;
+	margin-bottom: 3px;
+}
+.EditDueDatePostponeSelect,
+.EditDueDateTimeSelect
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;		
+	margin-top: 5px;
+}
+.EditDueDateTimeSelect
+{
+    margin-top: 0px;
+}
+.EditDueDateAdv
+{
+	
+}
+.EditDueDateAdvRec span
+{
+	padding-left:11px;
+}
+.EditDueDateAdvRec #r-recur-byday-week
+{
+	margin-left: 27px;
+}
+.EditDueDateFieldDiv
+{
+	padding-top: 5px;
+	height: 40px;
+}
+div.text_clear_button 
+{ 
+	background:url(/Images/clear_cross.png) no-repeat;
+	width:13px; 
+	height:13px; 
+	margin:0; 
+	padding:0;
+	margin-top: 1px;	
+   z-index:2; 
+   position:absolute; 
+   cursor:pointer; 
+}
+   
+.ContentAreaTopButtons
+{
+	float: right;
+	font-size: 11px;
+	color: #808080;
+	text-align: right;
+}
+.ProjectSharedByTitle
+{
+    background: url(/Images/TagLeft.png) no-repeat;
+    height: 24px;
+    padding-left: 12px;
+    margin-bottom: 4px;
+    display: none;
+    float: right;
+}
+.ProjectSharedByTitle2
+{
+    border-style: solid solid solid none;
+    border-width: 1px;
+    border-color: #CCECF9;
+    
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    background-color: #ECF8FD;
+    height: 12px;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 7px;    
+    color: #000000;    
+}
+.ProjectActions
+{
+    clear: right;
+}
+.DialogText
+{
+	height: 14px;	
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size:11px;	
+	padding-left: 5px;
+}
+.DialogTextBold
+{
+	height: 14px;	
+	font-family: Arial, Helvetica, sans-serif;	
+	font-weight: bold;
+	font-size:11px;	
+	padding-left: 5px;
+}
+.DialogTextSeparator,
+.DialogTextSeparator2
+{
+	font-weight: bold;
+	padding-top: 10px;
+	font-size:12px;	
+	font-style: italic;
+	padding-bottom: 5px;
+}
+.DialogTextSeparator2
+{
+	padding-top: 0px;	
+}
+.DialogTextSeparator3
+{
+    padding-bottom: 30px;
+}
+.DialogInput
+{
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	/*
+	border: 1px solid #666666;
+	margin-left: -2px;
+	margin-top: -2px;
+	padding-top: 1px;
+	background: url(/Images/input-bg.png) repeat-x white;
+*/
+}
+.DialogDD,
+.DialogDD2
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	width: 390px;
+}
+.DialogDD2
+{
+	width: auto;
+}
+.VerifyPassTitle
+{
+	padding-top: 20px;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+}
+.VerifyPassTable
+{
+    border: 1px solid #1B9FD1;
+    background-color: #F5FAFC;
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+.VerifyPassButton
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.VerifyPassInvalidTitle
+{
+	padding-left: 80px;
+	padding-top: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #CC3300;
+}
+.VerifyPassInvalidTitle2
+{
+	padding-left: 80px;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;	
+}
+
+.myButton {
+        
+    -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+        
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+    background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+    background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+        
+    background-color:#007dc1;
+        
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+        
+    border:1px solid #124d77;
+        
+    display:inline-block;
+    color:#ffffff;
+    font-family:arial;
+    font-size:13px;
+    font-weight:normal;
+    padding:6px 24px;
+    text-decoration:none;
+        
+    text-shadow:0px 1px 0px #154682;
+        
+}
+.myButton:hover {
+        
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+    background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+        
+    background-color:#0061a7;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+.TermsContent,
+.PrivacyContent
+{
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size:15px;
+	line-height:1.3em;
+	margin-bottom:1.2em;
+	color:#444444;
+}
+
+.TermsContent li 
+{
+	color:#444444;
+	font-size:15px;
+	line-height:1.6em;
+	margin-bottom:1.4em;
+}
+.PrivacyContent li 
+{
+	font-size:15px;
+	line-height:1.1em;
+	margin-bottom:1.1em;
+}
+
+.TermsContent h3,
+.PrivacyContent h3
+{
+	font-size:28px;
+	margin-bottom:3px;	
+	padding-top: 10px;
+}
+.PrivacyContent h4
+{
+	font-size:18px;
+}
+.AboutTitle
+{
+	color:#444444;
+	font-size:38px;
+	padding-top: 10px;
+}
+.AboutContent
+{
+	color:#444444;
+	font-size:15px;
+	padding-top: 10px;
+}
+.AboutKeepItSimple
+{
+	float: right;
+	color: #E9E9E9;
+	font-size: 70px;
+	padding: 20px;
+	padding-top: 0px;
+	padding-right: 0px;
+	text-align: right;
+}
+.ui-dialog .ui-dialog-content, .ui-tabs { padding:0; }
+#settings_info { border:0; }
+#ui-tab-dialog-close { position:absolute; right:0; top:16px; }
+#ui-tab-dialog-close a { float:none; padding:0; }
+
+/*@@@@@@@@ PRINT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.printFooter
+{
+    padding-top: 20px;
+    text-align: right;    
+}
+.printFooterText
+{
+    font-size: 15px;
+    margin-right: 5px;
+    color: #C0C0C0;
+}
+.printFooterImg
+{
+    vertical-align: middle;
+}
+.printable table
+{   		
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size:14px;	
+	padding: 0px;
+	margin: 0px;
+}
+.printable .ItemDueDateInner,
+.printable .ContentAreaTopButtons
+{
+    font-size:13px;	
+}
+
+.printable .currentprojecttitle,
+.printable .CurrentProjectTitleShared
+{
+    font-size: 20px;
+    background: none;
+    padding-left: 0px;
+}
+.printable .ItemCheckBox
+{
+    display: none;
+}
+.printable .ItemCheckDiv
+{
+    border: 1px solid #000000;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.printable .ItemContentDivBold,
+.printable .ItemContentDivBoldDisabled
+{
+    display: block;
+    border-left-style: solid;
+    border-left-width: 18px;
+    border-left-color: #CCCCCC;
+    background: none;
+    padding-left: 8px;
+}
+
+.printable .ItemIndicator
+{
+    display: none;
+}
+
+.printable .ItemDueDate
+{
+    border: 1px solid #999999;
+    background: none;
+}
+.printable .ItemDueDateInner
+{
+    background: none;    
+}
+
+.printable .ItemDueDate_p0 {background: none;}
+.printable .ItemDueDateInner_pp0 {background: none;}
+.printable .ItemDueDate_p1 {background: none;}
+.printable .ItemDueDateInner_pp1 {background: none;}
+.printable .ItemDueDate_p2 {background: none;}
+.printable .ItemDueDateInner_pp2 {background: none;}
+
+/*@@@@@@@@ PRINT END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.UpgradePaypalPanel
+{
+    background: url(/Images/paypalLogoPanel.png) no-repeat;
+    width: 393px;
+    height: 277px;   
+    margin-right: 10px;
+}
+.UpgradeSubscribeBtnDiv
+{
+    text-align: center;
+    padding-top: 20px;
+}
+.upTitle
+{
+    font-family: Arial, Helvetica, sans-serif;		
+	color:#444444;
+	padding-bottom: 10px;
+}
+.upTitle h3
+{
+    font-size:28px;	
+    padding-top: 0px;	    
+    margin-top: 15px;
+}
+.PointDiv
+{
+    margin-top: 15px;
+    background: url(/Images/upgrade/pointBG.png) no-repeat;
+    width: 500px;
+    height: 113px;
+}
+.PointImgDiv
+{
+    height: 113px;
+    width: 128px;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;        
+}
+.PointText
+{
+    float: right;
+    width: 342px;
+    padding-right: 20px;
+    padding-left: 5px;
+}
+.PointTitle
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #333333;    
+    padding-top: 12px;
+    padding-bottom: 13px;
+}
+.PointCont
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;    
+}
+.UpgPriceDiv
+{
+    width: 350px;
+    padding-top: 0px;
+}
+.UpgCoffee
+{
+    float:right;
+    width: 80px;
+    padding-left: 20px;
+}
+.UpgPriceText,
+.UpgPriceTextRed
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #333333;
+    text-align: right;
+    padding-top: 15px;
+}
+.UpgPriceTextRed
+{
+    font-size: 24px;    
+    color: #FF3300;
+}
+.UpgradeRight
+{
+    padding-left: 30px;
+}
+.UpgBuyDiv
+{
+    padding-top: 30px;
+}
+.UpgPaypal
+{
+    padding-left: 20px;
+}
+.GreySideBox
+{    
+    margin-top: 20px;
+	width:342px;	
+	background: url(/Images/upgrade/sidebox.png) top left no-repeat white;			
+	padding-top: 1px;
+}
+.GreySideBoxInner
+{
+	margin-top: 15px;	
+	width:312px;
+	
+	background: url(/Images/upgrade/sidebox.png) bottom left no-repeat white;	
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.GreyBoxTitle
+{    
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+.GreyBoxTitleSpace
+{
+    padding-top: 15px;
+}
+.UpgradeCompleteText
+{    
+    font-size: 15px;
+    padding-left: 20px;    
+	line-height:1.3em;	
+	color:#444444;
+}
+.UpgradeCompleteText a
+{
+    color: #000000;
+}
+.UpgradeCompLine
+{
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #CCCCCC;
+}
+.UpgrComTdr
+{
+    text-align: right;
+    font-weight: bold;
+}
+.UpgrComTr
+{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #CCCCCC;
+}
+.UpgLets
+{
+    font-size: 24px;
+    color: #444444;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.UpgLets a
+{
+    text-decoration: none;
+}
+.inline
+{
+    display: inline;
+}
+.ShareContent
+{
+    padding: 15px;
+}
+.shareSubTitle
+{
+    margin-bottom: 10px;    
+    padding-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #1685B1;
+    font-size: 15px;
+    font-weight: bold;
+}
+.shareSubText
+{
+    margin-bottom: 15px;
+}
+.shareSubText2
+{
+    margin-top: 15px;    
+}
+.ShareListApplyDivLabel
+{
+    font-family: Arial, Helvetica, sans-serif;	
+	font-size:11px;	
+	vertical-align: middle;
+	padding-left: 5px;
+}
+.CbApplyToSubProjects
+{
+    vertical-align: middle;
+}
+.ShareDialogInput
+{
+    width: 270px;
+}
+.ShareDialogInput2
+{
+    width: 230px;
+}
+.ShareListApplyDiv
+{
+    padding-top: 20px;   
+}
+.greywatermark
+{
+    color: #808080;
+}
+.shareDLine
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #C0C0C0;
+    height: 1px;
+}
+.ShareListTitle
+{
+    font-weight: bold;
+}
+.ShareRow
+{    
+    border-top: 1px dotted #C0C0C0;
+    
+}
+.ShareRow td
+{
+    padding-top: 5px;    
+    padding-bottom: 5px;
+}
+.AddRow td
+{
+    padding-bottom: 5px;
+}
+
+.ShareListTable
+{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;     
+}
+.ShareListDiv
+{
+    max-height: 358px;
+    overflow: auto;
+}
+.SharePerson
+{
+    font-weight: bold;
+}
+#validEmail
+{
+    background-image: url(/images/validNo.png);
+    width: 16px;
+	height: 16px;		
+	position: absolute;
+	margin-top: 4px;
+	margin-left: 4px;
+}
+.OpenTitle
+{
+    font-family: Arial, Helvetica, sans-serif;		
+	color:#444444;
+}
+.OpenTitle h3
+{
+    font-size:28px;	
+    padding-top: 0px;	    
+    margin-top: 15px;
+    margin-bottom: 10px;    
+}
+.OpenIDTitle1
+{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.OpenIDTitle2
+{
+    font-size: 12px;    
+    margin-bottom: 40px;
+}
+.OpenIDContent
+{
+    padding-top: 20px;
+    text-align: center;
+}
+.OpenIDContentPadding
+{
+    padding-top: 20px;
+    text-align: center;
+}
+.OpenIDContent2
+{
+    text-align: left;
+    width: 250px;
+    margin: 0 auto;
+}
+.OpenIDBtn
+{
+    text-align: center;
+    padding: 15px;
+}
+.OpenIDLinkDiv
+{
+    text-align: left;
+    width: 250px;
+    margin: 0 auto;
+}
+.OpenIDLineOR
+{    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.OpenIDloginDivText
+{
+	font-size: 13px;	
+	padding: 4px 0px 4px 0px;
+}
+.OpenIdDropDown
+{		
+	font-size:13px;		
+	height:29px;
+    border: 1px solid #B1E2F5;
+	width:240px;	
+}
+.OpenIdDropDownDark
+{
+    border: 1px solid #54C0E9;
+}
+.OpenIDTerms
+{
+	font-size: 11px;	
+	padding-top: 5px;	
+	display: block;
+}
+.Center
+{
+    text-align: center;
+}
+.SettingLinkedDiv
+{
+    float:left; width: 100px;
+}
+.SettingLinkedDivImg
+{
+    float:left; padding-right: 5px;
+}
+.SettingLinkedDivStat
+{
+    font-weight: bold;
+    float:left; width: 90px;
+}
+.SettingLinkedDivLink
+{
+    
+    text-decoration: underline;
+}
+.SharedProjName
+{
+    background: url(/Images/menu/users2.png) top right no-repeat;
+    padding-right: 8px;
+}
+.SharedProjNameRed
+{
+    background: url(/Images/menu/users3.png) top right no-repeat;
+    padding-right: 8px;
+}
+.SettingsShareListDiv
+{
+    border: 1px solid #CCCCCC;
+    overflow: auto;
+    height: 220px;
+    font-size: 12px;
+}
+.SetShareListDiv2
+{
+    border: 1px solid #CCCCCC;
+    overflow: auto;
+    height: 170px;
+    font-size: 12px;
+}
+.SettingsSharedWithMeList
+{
+    padding: 0px;
+    margin: 0px;
+}
+.SetShareLi
+{
+    width: 466px;
+    overflow: hidden;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #E8E8E8;
+}
+.SetSharediv1,
+.SetSharediv2,
+.SetSharediv2icon,
+.SetShareEnabled,
+.SetShareShown,
+.SetShareEnabledRed,
+.SetShareShownRed
+{
+    width: 120px;    
+    display: block;
+    float: left;    
+    padding-right: 4px;
+    padding-left: 4px;
+    overflow: hidden;
+}
+.SetSharediv2
+{
+    width: 240px;    
+}
+.SetSharediv2icon
+{
+    width: 10px;
+}
+.SetShareEnabled,
+.SetShareEnabledRed
+{
+    width: 55px;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #009933;
+}
+.SetShareShown,
+.SetShareShownRed
+{
+    width: 60px;    
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #009933;
+    text-align: center;
+}
+.SetShareEnabledRed
+{
+    color: #FF0000;
+}
+.SetShareShownRed
+{
+    color: #FF0000;
+}
+.bold
+{
+    font-weight: bold;
+}
+.itemTextLink
+{
+    color: Blue;
+}
+
+.ShareForPro
+{
+    padding-top:  10px;
+    font-size: 12px;
+    font-style: italic;
+    color: #FF0000;
+}
+.DisabledMenuItem
+{
+    color: #808080 !Important;
+}
+.SettProRight
+{
+    padding-top: 30px;
+    padding-right: 15px;
+    float:right;
+}
+.SettProLeft
+{
+    float:left;
+}
+.footerIcon
+{
+    vertical-align: middle;        
+}
+
+
+.redButton {
+        
+    -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+    box-shadow:inset 0px 1px 0px 0px #cf866c;
+        
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+    background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+        
+    background-color:#d0451b;
+        
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+        
+    border:1px solid #942911;
+        
+    display:inline-block;
+    color:#ffffff;
+    font-family:arial;
+    font-size:13px;
+    font-weight:normal;
+    padding:6px 24px;
+    text-decoration:none;
+        
+    text-shadow:0px 1px 0px #854629;
+        
+}
+.redButton:hover {
+        
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+    background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+        
+    background-color:#bc3315;
+}
+.redButton:active {
+    position:relative;
+    top:1px;
+}
+
+.DueDateBtn
+{
+    width: 45px;
+    height: 26px;
+    padding: 0px 0px;
+    float: right;
+    margin: 4px 2px 0px 0px;
+}
+.PostponeBtnDiv
+{	
+    width: 72px;
+    height: 26px;
+    padding: 0px 0px;
+    float: right;
+    margin: 1px 2px 0px 0px;
+}
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; }
+.ui-timepicker-rtl dl dd { margin: 0 65px 10px 10px; }
+
+.unsubButtonDiv
+{
+    text-align: center;
+    padding: 20px 40px 80px 40px;
+}
+
+.UnsubButton
+{
+    /* Disables default styling */
+    border: none !important;
+    background: #00B6FF;
+    color: #fff !important;
+
+    /* You need to set font, font size and cursor for buttons */
+    font-size: 25px;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    cursor: pointer;
+
+    padding: 8px 10px;    
+    margin: 0px;
+}
+.UnsubButton
+{
+    border-radius: 5px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    -webkit-border-radius: 5px;
+    -webkit-text-shadow: 0 -1px 0 rgba(0,0,0,0.15);    
+}
+.UnsubButton:hover
+{
+    /*background: #6CD7FF;*/
+    box-shadow:
+        0 0 0 1px #0086ba inset, /* Outer bevel */
+        0 0 0 2px #6cdcea inset, /* Inner bevel */
+        0 30px 20px -18px rgba(255,255,255,0.65) inset, /* Inner gradient */
+        1px 1px 3px rgba(0,0,0,0.2) /* Drop shadow */
+    ;
+    -webkit-box-shadow:
+        0 0 0 1px #0086ba inset, /* Outer bevel */
+        0 0 0 2px #6cdcea inset, /* Inner bevel */
+        0 30px 20px -18px rgba(255,255,255,0.65) inset, /* Inner gradient */
+        1px 1px 3px rgba(0,0,0,0.2) /* Drop shadow */
+    ;
+}
+.UnsubEmail
+{
+    font-size: 25px;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    text-align: center;
+    padding: 30px;
+}

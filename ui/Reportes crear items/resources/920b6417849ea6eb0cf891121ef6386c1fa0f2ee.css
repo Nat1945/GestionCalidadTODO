@@ -1,0 +1,72 @@
+/* Generic context menu styles */
+.contextMenu {
+	position: absolute;
+	width: 120px;
+	z-index: 99999;
+	border: solid 1px #CCC;
+	background: #EEE;
+	padding: 0px;
+	margin: 0px;
+	display: none;
+}
+
+.contextMenu LI {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.contextMenu A {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	line-height: 20px;
+	height: 20px;
+	background-position: 6px center;
+	background-repeat: no-repeat;
+	outline: none;
+	padding: 1px 5px;
+	padding-left: 28px;
+}
+
+.contextMenu LI.hover A {
+	color: #FFF;
+	background-color: #3399FF;
+}
+
+.contextMenu LI.disabled A {
+	color: #AAA;
+	cursor: default;
+}
+
+.contextMenu LI.hover.disabled A {
+	background-color: transparent;
+}
+
+.contextMenu LI.separator {
+	border-top: solid 1px #CCC;
+}
+
+/*
+	Adding Icons
+	
+	You can add icons to the context menu by adding
+	classes to the respective LI element(s)
+*/
+
+.contextMenu LI.edit A { background-image: url(/Images/menu/edit.png); }
+.contextMenu LI.cut A { background-image: url(/Images/menu/cut.png); }
+.contextMenu LI.copy A { background-image: url(/Images/menu/page_white_copy.png); }
+.contextMenu LI.paste A { background-image: url(/Images/menu/page_white_paste.png); }
+.contextMenu LI.delete A { background-image: url(/Images/icons/trash2.gif); }
+.contextMenu LI.quit A { background-image: url(/Images/menu/door.png); }
+.contextMenu LI.removeNotes A { background-image: url(/Images/menu/removeNotes2.png); }
+
+.contextMenu LI.add A { background-image: url(/Images/menu/add.png); }
+.contextMenu LI.done A { background-image: url(/Images/menu/donefolder.png); }
+.contextMenu LI.share A { background-image: url(/Images/menu/users2.png); }
+.contextMenu LI.sortAsc A { background-image: url(/Images/menu/down.png); }
+.contextMenu LI.sortDesc A { background-image: url(/Images/menu/up.png ); }
+.contextMenu LI.dueDate A { background-image: url(/Images/alarm.png ); }
+.contextMenu LI.order A { background-image: url(/Images/menu/order.png ); }
+.contextMenu LI.priority A { background-image: url(/Images/menu/priority.png ); }

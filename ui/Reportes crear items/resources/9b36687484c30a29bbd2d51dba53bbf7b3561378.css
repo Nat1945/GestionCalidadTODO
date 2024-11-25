@@ -1,0 +1,30 @@
+.InputTextEditItem, .InputTextEditProj
+{
+    font-size: 11px;
+}
+.ProjItemContent,
+.FilterItemContent
+{
+    font-size: 11px;
+}
+.ItemContent
+{
+    font-size: 11px;
+}
+
+.InputTextAddProj,
+.InputBtnAdd,
+.InputTextAddItem,
+.InputTextEditItem,
+.InputTextEditProj
+{
+	font-size:11px;
+}
+.ItemDueDateSet
+{
+	margin-left: -78px;	
+}
+.ListCount
+{
+    font-size: 10px;
+}

@@ -1,0 +1,57 @@
+{"version":7,"type":"context-options","origin":"testRunner","browserName":"","options":{},"platform":"win32","wallTime":1732504134487,"monotonicTime":706.016,"sdkLanguage":"javascript"}
+{"type":"before","callId":"hook@1","startTime":720.15,"class":"Test","method":"step","apiName":"Before Hooks","params":{},"stack":[]}
+{"type":"before","callId":"hook@2","parentId":"hook@1","startTime":722.749,"class":"Test","method":"step","apiName":"beforeEach hook","params":{},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\tests\\toDoHomeTest.spec.ts","line":5,"column":6}]}
+{"type":"before","callId":"fixture@3","parentId":"hook@2","startTime":741.384,"class":"Test","method":"step","apiName":"fixture: browser","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@4","parentId":"fixture@3","startTime":750.946,"class":"Test","method":"step","apiName":"browserType.launch","params":{"handleSIGINT":"false","headless":"true","tracesDir":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\test-results\\.playwright-artifacts-15\\traces","ignoreDefaultArgs":"undefined","ignoreAllDefaultArgs":"false","env":"undefined"},"stack":[]}
+{"type":"after","callId":"pw:api@4","endTime":1130.631,"attachments":[]}
+{"type":"after","callId":"fixture@3","endTime":1131.09,"attachments":[]}
+{"type":"before","callId":"fixture@5","parentId":"hook@2","startTime":1133.184,"class":"Test","method":"step","apiName":"fixture: context","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@6","parentId":"fixture@5","startTime":1136.417,"class":"Test","method":"step","apiName":"browser.newContext","params":{"acceptDownloads":"accept","bypassCSP":"false","colorScheme":"light","deviceScaleFactor":"1","hasTouch":"false","ignoreHTTPSErrors":"false","isMobile":"false","javaScriptEnabled":"true","locale":"en-US","offline":"false","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.31 Safari/537.36","viewport":"Object","serviceWorkers":"allow","noDefaultViewport":"false","extraHTTPHeaders":"undefined","storageState":"undefined","recordHar":"undefined","reducedMotion":"undefined","forcedColors":"undefined","clientCertificates":"undefined"},"stack":[]}
+{"type":"after","callId":"pw:api@6","endTime":1150.046,"attachments":[]}
+{"type":"after","callId":"fixture@5","endTime":1166.185,"attachments":[]}
+{"type":"before","callId":"fixture@7","parentId":"hook@2","startTime":1167.695,"class":"Test","method":"step","apiName":"fixture: page","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@8","parentId":"fixture@7","startTime":1172.5819999999999,"class":"Test","method":"step","apiName":"browserContext.newPage","params":{},"stack":[]}
+{"type":"after","callId":"pw:api@8","endTime":1450.299,"attachments":[]}
+{"type":"after","callId":"fixture@7","endTime":1450.644,"attachments":[]}
+{"type":"before","callId":"pw:api@9","parentId":"hook@2","startTime":1456.476,"class":"Test","method":"step","apiName":"page.goto","params":{"url":"https://todo.ly/","waitUntil":"load"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\tests\\toDoHomeTest.spec.ts","line":6,"column":16}]}
+{"type":"after","callId":"pw:api@9","endTime":8751.372,"attachments":[]}
+{"type":"after","callId":"hook@2","endTime":8751.824,"attachments":[]}
+{"type":"after","callId":"hook@1","endTime":8752.715,"attachments":[]}
+{"type":"before","callId":"pw:api@10","startTime":8765.873,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":".HPHeaderLogin","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoLogIn.page.ts","line":24,"column":36,"function":"ToDoLogInPage.clickOnLogIn"}]}
+{"type":"after","callId":"pw:api@10","endTime":9038.098,"attachments":[]}
+{"type":"before","callId":"pw:api@11","startTime":9044.793,"class":"Test","method":"step","apiName":"locator.fill","params":{"selector":"#ctl00_MainContent_LoginControl1_TextBoxEmail","value":"brenda.gutierrez@ucb.edu.bo","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoLogIn.page.ts","line":28,"column":31,"function":"ToDoLogInPage.llenarDatosUsuario"}]}
+{"type":"after","callId":"pw:api@11","endTime":9099.598,"attachments":[]}
+{"type":"before","callId":"pw:api@12","startTime":9102.714,"class":"Test","method":"step","apiName":"locator.fill","params":{"selector":"#ctl00_MainContent_LoginControl1_TextBoxPassword","value":"1945","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoLogIn.page.ts","line":29,"column":34,"function":"ToDoLogInPage.llenarDatosUsuario"}]}
+{"type":"after","callId":"pw:api@12","endTime":9158.004,"attachments":[]}
+{"type":"before","callId":"pw:api@13","startTime":9161.982,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":"#ctl00_MainContent_LoginControl1_ButtonLogin","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoLogIn.page.ts","line":33,"column":32,"function":"ToDoLogInPage.loguearUsuario"}]}
+{"type":"after","callId":"pw:api@13","endTime":9850.578,"attachments":[]}
+{"type":"before","callId":"pw:api@14","startTime":9856.599,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":".ProjItemContent >> internal:has-text=\"Sub Proceso 2\"i","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":19,"column":37,"function":"ToDoAddItemPage.clickOnSubProject"}]}
+{"type":"after","callId":"pw:api@14","endTime":10547.428,"attachments":[]}
+{"type":"before","callId":"pw:api@15","startTime":10550.569,"class":"Test","method":"step","apiName":"locator.waitFor","params":{"selector":".ProjItemContent >> internal:has-text=\"Sub Proceso 2\"i","strict":"true","omitReturnValue":"true","state":"visible"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":20,"column":37,"function":"ToDoAddItemPage.clickOnSubProject"}]}
+{"type":"after","callId":"pw:api@15","endTime":10881.992,"attachments":[]}
+{"type":"before","callId":"expect@16","startTime":10895.78,"class":"Test","method":"step","apiName":"expect.toBeVisible","params":{},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":24,"column":37,"function":"ToDoAddItemPage.llenarNuevoItem"}]}
+{"type":"after","callId":"expect@16","endTime":11021.521,"attachments":[]}
+{"type":"before","callId":"pw:api@17","startTime":11025.623,"class":"Test","method":"step","apiName":"locator.fill","params":{"selector":"#NewItemContentInput","value":"Item 1234","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":25,"column":29,"function":"ToDoAddItemPage.llenarNuevoItem"}]}
+{"type":"after","callId":"pw:api@17","endTime":11384.578,"attachments":[]}
+{"type":"before","callId":"expect@18","startTime":11388.218,"class":"Test","method":"step","apiName":"expect.toHaveValue","params":{"expected":"Item 1234"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":26,"column":37,"function":"ToDoAddItemPage.llenarNuevoItem"}]}
+{"type":"after","callId":"expect@18","endTime":11468.676,"attachments":[]}
+{"type":"before","callId":"expect@19","startTime":11471.6,"class":"Test","method":"step","apiName":"expect.toBeEnabled","params":{},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":30,"column":38,"function":"ToDoAddItemPage.clickOnAddItem"}]}
+{"type":"after","callId":"expect@19","endTime":11569.327,"attachments":[]}
+{"type":"before","callId":"pw:api@20","startTime":11573.644,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":"#NewItemAddButton","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":31,"column":30,"function":"ToDoAddItemPage.clickOnAddItem"}]}
+{"type":"after","callId":"pw:api@20","endTime":11840.102,"attachments":[]}
+{"type":"before","callId":"expect@21","startTime":11843.062,"class":"Test","method":"step","apiName":"expect.toBeVisible","params":{},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":24,"column":37,"function":"ToDoAddItemPage.llenarNuevoItem"}]}
+{"type":"after","callId":"expect@21","endTime":11921.402,"attachments":[]}
+{"type":"before","callId":"pw:api@22","startTime":11924.626,"class":"Test","method":"step","apiName":"locator.fill","params":{"selector":"#NewItemContentInput","value":"Item 4321","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":25,"column":29,"function":"ToDoAddItemPage.llenarNuevoItem"}]}
+{"type":"after","callId":"pw:api@22","endTime":12091.839,"attachments":[]}
+{"type":"before","callId":"expect@23","startTime":12094.27,"class":"Test","method":"step","apiName":"expect.toHaveValue","params":{"expected":"Item 4321"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":26,"column":37,"function":"ToDoAddItemPage.llenarNuevoItem"}]}
+{"type":"after","callId":"expect@23","endTime":12172.323,"attachments":[]}
+{"type":"before","callId":"expect@24","startTime":12175.348,"class":"Test","method":"step","apiName":"expect.toBeEnabled","params":{},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":30,"column":38,"function":"ToDoAddItemPage.clickOnAddItem"}]}
+{"type":"after","callId":"expect@24","endTime":12284.917,"attachments":[]}
+{"type":"before","callId":"pw:api@25","startTime":12288.874,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":"#NewItemAddButton","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoAddItem.page.ts","line":31,"column":30,"function":"ToDoAddItemPage.clickOnAddItem"}]}
+{"type":"after","callId":"pw:api@25","endTime":12491.794,"attachments":[]}
+{"type":"before","callId":"hook@26","startTime":12492.848,"class":"Test","method":"step","apiName":"After Hooks","params":{},"stack":[]}
+{"type":"before","callId":"fixture@27","parentId":"hook@26","startTime":12494.979,"class":"Test","method":"step","apiName":"fixture: page","params":{},"stack":[]}
+{"type":"after","callId":"fixture@27","endTime":12495.445,"attachments":[]}
+{"type":"before","callId":"fixture@28","parentId":"hook@26","startTime":12496.403,"class":"Test","method":"step","apiName":"fixture: context","params":{},"stack":[]}
+{"type":"after","callId":"fixture@28","endTime":12496.569,"attachments":[]}
+{"type":"after","callId":"hook@26","endTime":13650.33,"attachments":[]}

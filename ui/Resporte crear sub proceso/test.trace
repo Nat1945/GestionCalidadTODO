@@ -1,0 +1,61 @@
+{"version":7,"type":"context-options","origin":"testRunner","browserName":"","options":{},"platform":"win32","wallTime":1732511392917,"monotonicTime":1551.1480000000001,"sdkLanguage":"javascript"}
+{"type":"before","callId":"hook@1","startTime":1582.767,"class":"Test","method":"step","apiName":"Before Hooks","params":{},"stack":[]}
+{"type":"before","callId":"hook@2","parentId":"hook@1","startTime":1590.721,"class":"Test","method":"step","apiName":"beforeEach hook","params":{},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\tests\\toDoHomeTest.spec.ts","line":5,"column":6}]}
+{"type":"before","callId":"fixture@3","parentId":"hook@2","startTime":1618.835,"class":"Test","method":"step","apiName":"fixture: browser","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@4","parentId":"fixture@3","startTime":1632.69,"class":"Test","method":"step","apiName":"browserType.launch","params":{"handleSIGINT":"false","headless":"true","tracesDir":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\test-results\\.playwright-artifacts-35\\traces","ignoreDefaultArgs":"undefined","ignoreAllDefaultArgs":"false","env":"undefined"},"stack":[]}
+{"type":"after","callId":"pw:api@4","endTime":1905.848,"attachments":[]}
+{"type":"after","callId":"fixture@3","endTime":1906.7759999999998,"attachments":[]}
+{"type":"before","callId":"fixture@5","parentId":"hook@2","startTime":1910.672,"class":"Test","method":"step","apiName":"fixture: context","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@6","parentId":"fixture@5","startTime":1916.214,"class":"Test","method":"step","apiName":"browser.newContext","params":{"acceptDownloads":"accept","bypassCSP":"false","colorScheme":"light","deviceScaleFactor":"1","hasTouch":"false","ignoreHTTPSErrors":"false","isMobile":"false","javaScriptEnabled":"true","locale":"en-US","offline":"false","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.31 Safari/537.36","viewport":"Object","serviceWorkers":"allow","noDefaultViewport":"false","extraHTTPHeaders":"undefined","storageState":"undefined","recordHar":"undefined","reducedMotion":"undefined","forcedColors":"undefined","clientCertificates":"undefined"},"stack":[]}
+{"type":"after","callId":"pw:api@6","endTime":1939.194,"attachments":[]}
+{"type":"after","callId":"fixture@5","endTime":1961.2240000000002,"attachments":[]}
+{"type":"before","callId":"fixture@7","parentId":"hook@2","startTime":1963.241,"class":"Test","method":"step","apiName":"fixture: page","params":{},"stack":[]}
+{"type":"before","callId":"pw:api@8","parentId":"fixture@7","startTime":1968.558,"class":"Test","method":"step","apiName":"browserContext.newPage","params":{},"stack":[]}
+{"type":"after","callId":"pw:api@8","endTime":2257.727,"attachments":[]}
+{"type":"after","callId":"fixture@7","endTime":2258.198,"attachments":[]}
+{"type":"before","callId":"pw:api@9","parentId":"hook@2","startTime":2264.588,"class":"Test","method":"step","apiName":"page.goto","params":{"url":"https://todo.ly/","waitUntil":"load"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\tests\\toDoHomeTest.spec.ts","line":6,"column":16}]}
+{"type":"after","callId":"pw:api@9","endTime":6133.616,"attachments":[]}
+{"type":"after","callId":"hook@2","endTime":6134.033,"attachments":[]}
+{"type":"after","callId":"hook@1","endTime":6136.354,"attachments":[]}
+{"type":"before","callId":"pw:api@10","startTime":6148.959,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":".HPHeaderLogin","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoLogIn.page.ts","line":24,"column":36,"function":"ToDoLogInPage.clickOnLogIn"}]}
+{"type":"after","callId":"pw:api@10","endTime":6377.306,"attachments":[]}
+{"type":"before","callId":"pw:api@11","startTime":6381.322,"class":"Test","method":"step","apiName":"locator.fill","params":{"selector":"#ctl00_MainContent_LoginControl1_TextBoxEmail","value":"brenda.gutierrez@ucb.edu.bo","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoLogIn.page.ts","line":28,"column":31,"function":"ToDoLogInPage.llenarDatosUsuario"}]}
+{"type":"after","callId":"pw:api@11","endTime":6453.737,"attachments":[]}
+{"type":"before","callId":"pw:api@12","startTime":6457.183,"class":"Test","method":"step","apiName":"locator.fill","params":{"selector":"#ctl00_MainContent_LoginControl1_TextBoxPassword","value":"1945","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoLogIn.page.ts","line":29,"column":34,"function":"ToDoLogInPage.llenarDatosUsuario"}]}
+{"type":"after","callId":"pw:api@12","endTime":6520.068,"attachments":[]}
+{"type":"before","callId":"pw:api@13","startTime":6525.763,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":"#ctl00_MainContent_LoginControl1_ButtonLogin","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoLogIn.page.ts","line":33,"column":32,"function":"ToDoLogInPage.loguearUsuario"}]}
+{"type":"after","callId":"pw:api@13","endTime":7439.683,"attachments":[]}
+{"type":"before","callId":"expect@14","startTime":7449.019,"class":"Test","method":"step","apiName":"expect.toBeVisible","params":{},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":24,"column":45,"function":"ToDoCreateItemPage.clickOnSubProject"}]}
+{"type":"after","callId":"expect@14","endTime":8209.072,"attachments":[]}
+{"type":"before","callId":"pw:api@15","startTime":8212.646,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":".ProjItemContent >> internal:has-text=\"Sub Project\"i","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":25,"column":37,"function":"ToDoCreateItemPage.clickOnSubProject"}]}
+{"type":"after","callId":"pw:api@15","endTime":8483.521,"attachments":[]}
+{"type":"before","callId":"expect@16","startTime":8488.708,"class":"Test","method":"step","apiName":"expect.toBeVisible","params":{},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":30,"column":40,"function":"ToDoCreateItemPage.clickOnMenuItem"}]}
+{"type":"after","callId":"expect@16","endTime":8593.47,"attachments":[]}
+{"type":"before","callId":"pw:api@17","startTime":8595.923,"class":"Test","method":"step","apiName":"locator.hover","params":{"selector":".ProjItemContent[itemid=\"4379894\"]","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":31,"column":32,"function":"ToDoCreateItemPage.clickOnMenuItem"}]}
+{"type":"after","callId":"pw:api@17","endTime":8789.017,"attachments":[]}
+{"type":"before","callId":"expect@18","startTime":8792.108,"class":"Test","method":"step","apiName":"expect.toBeVisible","params":{},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":33,"column":28,"function":"ToDoCreateItemPage.clickOnMenuItem"}]}
+{"type":"after","callId":"expect@18","endTime":8872.065,"attachments":[]}
+{"type":"before","callId":"pw:api@19","startTime":8875.951000000001,"class":"Test","method":"step","apiName":"locator.waitFor","params":{"selector":".ProjItemMenu[itemid=\"4379894\"]","strict":"true","omitReturnValue":"true","state":"visible"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":34,"column":20,"function":"ToDoCreateItemPage.clickOnMenuItem"}]}
+{"type":"after","callId":"pw:api@19","endTime":8949.074,"attachments":[]}
+{"type":"before","callId":"pw:api@20","startTime":8953.441,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":".ProjItemMenu[itemid=\"4379894\"]","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":35,"column":20,"function":"ToDoCreateItemPage.clickOnMenuItem"}]}
+{"type":"after","callId":"pw:api@20","endTime":9200.833,"attachments":[]}
+{"type":"before","callId":"pw:api@21","startTime":9205.667,"class":"Test","method":"step","apiName":"locator.waitFor","params":{"selector":"ul#projectContextMenu li.add a >> internal:has-text=\"Add item below\"i","strict":"true","omitReturnValue":"true","state":"visible"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":39,"column":28,"function":"ToDoCreateItemPage.clickOnMenuItem"}]}
+{"type":"after","callId":"pw:api@21","endTime":9362.62,"attachments":[]}
+{"type":"before","callId":"expect@22","startTime":9370.384,"class":"Test","method":"step","apiName":"expect.toBeVisible","params":{},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":40,"column":36,"function":"ToDoCreateItemPage.clickOnMenuItem"}]}
+{"type":"after","callId":"expect@22","endTime":9482.415,"attachments":[]}
+{"type":"before","callId":"pw:api@23","startTime":9486.69,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":"ul#projectContextMenu li.add a >> internal:has-text=\"Add item below\"i","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":41,"column":28,"function":"ToDoCreateItemPage.clickOnMenuItem"}]}
+{"type":"after","callId":"pw:api@23","endTime":9722.603,"attachments":[]}
+{"type":"before","callId":"pw:api@24","startTime":9725.188,"class":"Test","method":"step","apiName":"locator.fill","params":{"selector":"#AddProjectLi #ItemEditTextbox","value":"Proceso1234","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":46,"column":28,"function":"ToDoCreateItemPage.llenarNuevoSubProceso"}]}
+{"type":"after","callId":"pw:api@24","endTime":9852.87,"attachments":[]}
+{"type":"before","callId":"expect@25","startTime":9855.871,"class":"Test","method":"step","apiName":"expect.toHaveValue","params":{"expected":"Proceso1234"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":47,"column":36,"function":"ToDoCreateItemPage.llenarNuevoSubProceso"}]}
+{"type":"after","callId":"expect@25","endTime":9937.151,"attachments":[]}
+{"type":"before","callId":"pw:api@26","startTime":9939.887,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":"#AddProjectLi #ItemEditSubmit","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":49,"column":30,"function":"ToDoCreateItemPage.llenarNuevoSubProceso"}]}
+{"type":"after","callId":"pw:api@26","endTime":10094.002,"attachments":[]}
+{"type":"before","callId":"pw:api@27","startTime":10098.398,"class":"Test","method":"step","apiName":"locator.click","params":{"selector":"#AddProjectLi #ItemEditSubmit","strict":"true"},"stack":[{"file":"C:\\Users\\Natalia\\Documents\\gestion calidad ejercicios\\ejemplo\\pages\\toDoCreateItem.page.ts","line":53,"column":30,"function":"ToDoCreateItemPage.clickOnSaveItem"}]}
+{"type":"after","callId":"pw:api@27","endTime":10238.284,"attachments":[]}
+{"type":"before","callId":"hook@28","startTime":10239.596,"class":"Test","method":"step","apiName":"After Hooks","params":{},"stack":[]}
+{"type":"before","callId":"fixture@29","parentId":"hook@28","startTime":10242.495,"class":"Test","method":"step","apiName":"fixture: page","params":{},"stack":[]}
+{"type":"after","callId":"fixture@29","endTime":10243.181,"attachments":[]}
+{"type":"before","callId":"fixture@30","parentId":"hook@28","startTime":10244.352,"class":"Test","method":"step","apiName":"fixture: context","params":{},"stack":[]}
+{"type":"after","callId":"fixture@30","endTime":10244.531,"attachments":[]}
+{"type":"after","callId":"hook@28","endTime":10896.747,"attachments":[]}

@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "9bf1f7ee-ab23-4d97-b9b1-45dde0a515af",
+		"name": "API-testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17533763"
+	},
+	"item": [
+		{
+			"name": "Creates a new item",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let itemName = \"Item \" + new Date().getTime();  \r",
+							"pm.variables.set(\"itemName\", itemName);  \r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Item creado con el nombre correcto\", function () {\r",
+							"    let jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Content).to.eql(pm.variables.get(\"itemName\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Tiempo de respuesta menor a 2000ms\", function (){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verificar que el environment este activo\", () => {\r",
+							"    pm.expect(pm.environment.name).to.eql(\"QAenv\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verificar que el ítem no está marcado como completado\", function () {\r",
+							"    let jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Checked).to.be.false;\r",
+							"});\r",
+							"\r",
+							"let jsonData = pm.response.json();\r",
+							"if (jsonData && jsonData.Id) {\r",
+							"    pm.environment.set(\"ITEMID\", jsonData.Id); // Guarda el ID en el entorno\r",
+							"    console.log(\"Se creó ITEMID en el entorno: \" + jsonData.Id);\r",
+							"} else {\r",
+							"    console.error(\"No se encontró el ID en la respuesta.\");\r",
+							"}\r",
+							"console.log(\"Se creo itemid en environment\")\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1945",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "brenda.gutierrez@ucb.edu.bo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Content\": \"{{itemName}}\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}api/items.json",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"items.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Item By Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let itemId = pm.environment.get(\"ITEMID\");\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Estructura de item correcta\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Id).to.eql(itemId); \r",
+							"    pm.expect(jsonData.Content).to.be.a('string');\r",
+							"    pm.expect(jsonData.ItemType).to.eql(1);\r",
+							"    pm.expect(jsonData.Checked).to.be.false;\r",
+							"    pm.expect(jsonData.Priority).to.eql(4);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Respuesta no vacia\", function () {\r",
+							"    pm.expect(pm.response.text()).to.not.be.empty;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Item ID es similar a la consulta\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var expectedId = itemId;\r",
+							"    pm.expect(jsonData.Id).to.eql(itemId);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1945",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "brenda.gutierrez@ucb.edu.bo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}api/items/{{ITEMID}}.json",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"items",
+						"{{ITEMID}}.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item By Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let checkedStatus = false; \r",
+							"pm.variables.set(\"checkedStatus\", checkedStatus);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Checked se actualizo correctamente\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var expectedCheckedStatus = pm.variables.get(\"checkedStatus\");\r",
+							"    pm.expect(jsonData.Checked).to.eql(expectedCheckedStatus);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"La respuesta contiene los campos esperados\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var expectedFields = [\"Id\", \"Content\", \"ItemType\", \"Checked\", \"ProjectId\", \"ParentId\", \"Path\", \"Collapsed\", \"DateString\", \"DateStringPriority\", \"DueDate\", \"Recurrence\", \"ItemOrder\", \"LastSyncedDateTime\", \"Priority\", \"Children\", \"DueDateTime\", \"CreatedDate\", \"LastCheckedDate\", \"LastUpdatedDate\", \"Deleted\", \"Notes\", \"InHistory\", \"SyncClientCreationId\", \"DueTimeSpecified\", \"OwnerId\"];\r",
+							"    pm.expect(Object.keys(jsonData)).to.have.members(expectedFields);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Respuesta no vacia\", function () {\r",
+							"    pm.expect(pm.response.text()).to.not.be.empty;\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1945",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "brenda.gutierrez@ucb.edu.bo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Checked\": \"{{checkedStatus}}\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}api/items/{{ITEMID}}.json",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"items",
+						"{{ITEMID}}.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item By Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let itemId = pm.environment.get(\"ITEMID\");\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Item details are returned and match expected values\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Id).to.eql(itemId);  \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify OwnerId is correct\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var id=806618;\r",
+							"    pm.expect(jsonData.OwnerId).to.eql(id);\r",
+							"    console.log(\"ownerId\",id);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verificar mensaje de delete\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"Deleted\").that.is.true;\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1945",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "brenda.gutierrez@ucb.edu.bo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}api/items/{{ITEMID}}.json",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"items",
+						"{{ITEMID}}.json"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "emailGenerated",
+			"value": ""
+		}
+	]
+}
